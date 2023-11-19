@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page</title>
+    <link rel="stylesheet" href="./singlePage.css">
+    <link rel="stylesheet" href="./category.css">
+    <link rel="stylesheet" href="./header.css">
+    <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+</head>
+<body>
+
+     <!--================= Header-start =====================-->
+
+     <div class= "DHeaderNav MobileHide">
+      <div class="container">
+  
+        <div  class="row align-items-center " id="site-header">
+          <nav  class="navbar navbar-expand-lg fixed-top" >
+          
+            <div class="container">
+              <a class="navbar-brand Dlogo" href="#">
+                <img style="width: 150px; padding: 20px" src="https://i.postimg.cc/Qttzxb5H/llogo.png" alt="" class=" custom" >
+              </a>
+  
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+  
+  
+         
+  
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+  
+  
+  
+                <ul class="navbar-nav ms-auto right-menuss">
+  
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html"><i class="fa fa-home"></i></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/categoryPage.html">জাতীয়</a></li>
+                    
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="">আন্তর্জাতিক</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/categoryPage.html">রাজনীতি</a>
+                    </li>
+  
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close = "outside">
+                            অর্থ-বাণিজ্য
+                        </a>
+                       <div style="background-color: #0d6767; color: #fff; padding: 10px; border: none; border-radius: 0;" class="dropdown-menu   ">
+  
+                     
+                           
+                    <div class="list-groups custom-drop">
+                        <a class="list-group-item mb-3" href="#">শিল্প ও বাণিজ্য</a>
+                        <a class="list-group-item" href="#">এই বিভাগের সব খবর</a>
+                        
+  
+                    </div>
+                        
+        
+        
+                       </div>
+                      </li>
+                  
+                    <li class="nav-item"><a class="nav-link" href="">শেয়ার বাজার</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">খেলা</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">বিনোদন</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">শিক্ষা</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">লাইফ স্টাইল</a></li>
+                    <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown disable" aria-expanded="false">সারাদেশ</a>
+                    <ul class="dropdown-menu custom-drop" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="">ঢাকা</a></li>
+                      <li><a class="dropdown-item" href="">চট্টগ্রাম</a></li>
+                      <li><a class="dropdown-item" href="">সিলেট</a></li>
+                      <li><a class="dropdown-item" href="">রাজশাহী</a></li>
+                      <li><a class="dropdown-item" href="">খুলনা</a></li>
+                      <li><a class="dropdown-item" href="">বরিশাল</a></li>
+                      <li><a class="dropdown-item" href="">রংপুর</a></li>
+                      <li><a class="dropdown-item" href="">ময়মনসিংহ</a></li>
+                      </ul>
+                  
+                    </li>
+                    
+                    <li class="nav-item dropdown has-megamenu">
+                    <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">অন্যান্য</a>
+                    <div class="dropdown-menu megamenus " role="menu">
+                      <div class="row  ">
+                      <div class="col-lg-3">
+                      <ul class="nav flex-column">
+                      <li><a class="dropdown-item" href="">কৃষি-পরিবেশ</a></li>
+                      <li><a class="dropdown-item" href="">স্বাস্থ্য</a></li>
+                      <li><a class="dropdown-item" href="">আপন কথা</a></li>
+                      <li><a class="dropdown-item" href="">সাহিত্য </a></li>
+                      </ul>
+                      </div>
+                      <div class="col-lg-3">
+                      <ul class="nav flex-column">
+                      <li><a class="dropdown-item" href="">আইন-আদালত</a></li>
+                      <li><a class="dropdown-item" href="">চাকরি</a></li>
+                      <li><a class="dropdown-item" href="">গণমাধ্যম</a></li>
+                      <li><a class="dropdown-item" href="">ধর্ম</a></li>
+                      </ul>
+                      </div>
+                      <div class="col-lg-3">
+                      <ul class="nav flex-column">
+                      <li><a class="dropdown-item" href="">বিজ্ঞান-প্রযুক্তি</a></li>
+                      <li><a class="dropdown-item" href="">বিশেষ প্রতিবেদন</a></li>
+                      <li><a class="dropdown-item" href="">কনভার্টার</a></li>
+                      <li><a class="dropdown-item" href="">আর্কাইভস</a></li>
+                      </ul>
+                      </div>
+                      <div class="col-lg-3">
+                      <ul class="nav flex-column">
+                      <li><a class="dropdown-item" href="">জনশক্তি-প্রবাস</a></li>
+                      <li><a class="dropdown-item" href="">অপরাধ-দুদক</a></li>
+                      <li><a class="dropdown-item" href="">ফটোগ্যালারি</a></li>
+                      <li><a class="dropdown-item" href="">ভিডিওগ্যালরি</a></li>
+                      </ul>
+                      </div>
+                      </div>
+                      </div>
+                  
+                    </li>
+                    
+                    <li class="nav-item">
+                    <div class="d-flex justify-content-end SearchArea nav-link">
+                    <form action="" id="cse-search-box">
+                    <div class="search">
+                    <input type="hidden" name="cx" value="91b309c1d8c5c83f3">
+                    <input type="hidden" name="ie" value="utf-8">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <div class="search-box">
+                    <input type="text" name="q" id="q" placeholder="এখানে লিখুন...">
+                    <input type="submit" name="sa" id="sa" value="খুঁজুন">
+                    </div>
+                    </div>
+                    </form>
+                    </div>
+                    </li>
+                    </ul> 
+  
+              </div>
+            </div>
+          </nav>
+        </div>
+  
+  
+  
+  
+          <div class="row">
+              <div class="col-lg-12">
+                
+  
+  
+                  <nav class="navbar navbar-expand-lg" >
+          
+                      <div class="container-fluid">
+                        <a class="navbar-brand Dlogo" href="#">
+                          <img style="width: 230px; padding: 20px" src="https://i.postimg.cc/Qttzxb5H/llogo.png" alt="" class=" custom" >
+                        </a>
+  
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+  
+  
+                        
+  
+                      
+  
+                      
+                        <div class="SearchSection text-right">
+                          <div class="search text-right">
+                          <div class="DateTimeBn">
+                          <p class="date1"> বৃহস্পতিবার ১৬ নভেম্বর ২০২৩ </p>
+                          <span class="divider"><i class="bi bi-square-fill"></i></span>
+                          <p class="date1">২&nbsp;অগ্রাহায়ণ&nbsp;১৪৩০ বঙ্গাব্দ</p>
+                          <span class="divider"><i class="bi bi-square-fill"></i></span>
+                          <a href="" class="SocialIcon"><i class="bi bi-facebook"></i></a>
+                          <span class="divider"><i class="bi bi-square-fill"></i></span>
+                          <a href="" class="SocialIcon"><i class="bi bi-twitter"></i></a>
+                          <span class="divider"><i class="bi bi-square-fill"></i></span>
+                          <a href="" class="SocialIcon"><i class="bi bi-youtube"></i></a>
+                          <span class="divider"><i class="bi bi-square-fill"></i></span>
+                          <a href="" class="SocialIcon"><i class="bi bi-linkedin"></i></a>
+                          <span class="divider"><i class="bi bi-square-fill"></i></span>
+                          <a href="" class="SocialIcon"><i class="bi bi-instagram"></i></a>
+                          <span class="divider"><i class="bi bi-square-fill"></i></span>
+                          <a href="" class="SocialIcon"><i class="bi bi-wifi "></i></a>
+                          </div>
+                          </div>
+                          </div>
+  
+  
+  
+  
+  
+  
+  
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    
+  
+  
+  
+                          <ul class="navbar-nav ml-auto right-menus">
+          
+                              <li class="nav-item">
+                                  <a class="nav-link" href=""><i class="bi bi-house-fill"></i></a>
+                              </li>
+                              <li class="nav-item"><a class="nav-link text-light" href="/categoryPage.html">জাতীয়</a></li>
+                              
+                              
+                              <li class="nav-item">
+                                  <a class="nav-link" href="">আন্তর্জাতিক</a></li>
+                              <li class="nav-item"><a class="nav-link" href="/categoryPage.html">রাজনীতি</a>
+                              </li>
+  
+                              <li class="nav-item dropdown ">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close = "outside">
+                                      অর্থ-বাণিজ্য
+                                  </a>
+                                 <div style="background-color: #0d6767; color: #fff; padding: 10px; border: none; border-radius: 0;" class="dropdown-menu   ">
+  
+                               
+                                     
+                              <div class="list-groups custom-drop">
+                                  <a class="list-group-item mb-3" href="#">শিল্প ও বাণিজ্য</a>
+                                  <a class="list-group-item" href="#">এই বিভাগের সব খবর</a>
+                                  
+  
+                              </div>
+                                  
+                  
+                  
+                                 </div>
+                                </li>
+                            
+                              <li class="nav-item"><a class="nav-link" href="">শেয়ার বাজার</a></li>
+                              <li class="nav-item"><a class="nav-link" href="">খেলা</a></li>
+                              <li class="nav-item"><a class="nav-link" href="">বিনোদন</a></li>
+                              <li class="nav-item"><a class="nav-link" href="">শিক্ষা</a></li>
+                              <li class="nav-item"><a class="nav-link" href="">লাইফ স্টাইল</a></li>
+                              <li class="nav-item dropdown ">
+                              <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown disable" aria-expanded="false">সারাদেশ</a>
+                              <ul class="dropdown-menu custom-drop" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="">ঢাকা</a></li>
+                              <li><a class="dropdown-item" href="">চট্টগ্রাম</a></li>
+                              <li><a class="dropdown-item" href="">সিলেট</a></li>
+                              <li><a class="dropdown-item" href="">রাজশাহী</a></li>
+                              <li><a class="dropdown-item" href="">খুলনা</a></li>
+                              <li><a class="dropdown-item" href="">বরিশাল</a></li>
+                              <li><a class="dropdown-item" href="">রংপুর</a></li>
+                              <li><a class="dropdown-item" href="">ময়মনসিংহ</a></li>
+                              </ul>
+                              </li>
+                              
+                              <li class="nav-item dropdown has-megamenu">
+                              <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">অন্যান্য</a>
+                              <div class="dropdown-menu megamenu " role="menu">
+                              <div class="row  ">
+                              <div class="col-lg-3">
+                              <ul class="nav flex-column">
+                              <li><a class="dropdown-item" href="">কৃষি-পরিবেশ</a></li>
+                              <li><a class="dropdown-item" href="">স্বাস্থ্য</a></li>
+                              <li><a class="dropdown-item" href="">আপন কথা</a></li>
+                              <li><a class="dropdown-item" href="">সাহিত্য </a></li>
+                              </ul>
+                              </div>
+                              <div class="col-lg-3">
+                              <ul class="nav flex-column">
+                              <li><a class="dropdown-item" href="">আইন-আদালত</a></li>
+                              <li><a class="dropdown-item" href="">চাকরি</a></li>
+                              <li><a class="dropdown-item" href="">গণমাধ্যম</a></li>
+                              <li><a class="dropdown-item" href="">ধর্ম</a></li>
+                              </ul>
+                              </div>
+                              <div class="col-lg-3">
+                              <ul class="nav flex-column">
+                              <li><a class="dropdown-item" href="">বিজ্ঞান-প্রযুক্তি</a></li>
+                              <li><a class="dropdown-item" href="">বিশেষ প্রতিবেদন</a></li>
+                              <li><a class="dropdown-item" href="">কনভার্টার</a></li>
+                              <li><a class="dropdown-item" href="">আর্কাইভস</a></li>
+                              </ul>
+                              </div>
+                              <div class="col-lg-3">
+                              <ul class="nav flex-column">
+                              <li><a class="dropdown-item" href="">জনশক্তি-প্রবাস</a></li>
+                              <li><a class="dropdown-item" href="">অপরাধ-দুদক</a></li>
+                              <li><a class="dropdown-item" href="">ফটোগ্যালারি</a></li>
+                              <li><a class="dropdown-item" href="">ভিডিওগ্যালরি</a></li>
+                              </ul>
+                              </div>
+                              </div>
+                              </div>
+                              </li>
+                              
+                              <li class="nav-item">
+                              <div class="d-flex justify-content-end SearchArea nav-link">
+                              <form action="" id="cse-search-box">
+                              <div class="search">
+                              <input type="hidden" name="cx" value="91b309c1d8c5c83f3">
+                              <input type="hidden" name="ie" value="utf-8">
+                              <i class="bi bi-search text-light"></i>
+                              <div class="search-box">
+                              <input type="text" name="q" id="q" placeholder="এখানে লিখুন...">
+                              <input type="submit" name="sa" id="sa" value="খুঁজুন">
+                              </div>
+                              </div>
+                              </form>
+                              </div>
+                              </li>
+                              </ul> 
+  
+                        </div>
+                      </div>
+                    </nav>
+              </div>
+          </div>
+      </div>
+    
+  
+    </div>
+
+
+   <!--==================== Header-end ============================-->
+
+      <div class="singlePage-area">
+        <div class="container ">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 col-sm-3">
+                <div class="bishes-news-btn">
+                  <a> জাতীয় </a>
+                </div>
+              </div>
+              <div class="col-lg-10 col-md-7 col-sm-7"></div>
+            </div>
+          </div>
+    
+          <div class="container">
+            <div class="row ">
+                <div class="col-lg-9 col-md-12 col-sm-12">
+                    <div class="title">
+                       
+                        <h1 style="font-size: 32px; font-family: 'SolaimanLipi', sans-serif !important">বিএনপির দুই দিনের অবরোধ চলছে</h1>
+                        </div>
+                        <div class="all mt-3">
+
+                            <div class="row align-items-center">
+                                <div class="col-lg-10 col-md-10">
+                                    <div class="dtitle">
+                                        <h2><i class="far fa-edit"></i>নিজস্ব প্রতিবেদক </h2>
+                                        <div class="pdate">
+                                        <p><i class="fa fa-clock"></i>প্রকাশিত: ০৯:৪৮, ১৫ নভেম্বর ২০২৩</p>
+                                        <p>আপডেট: ১৩:৪০, ১৫ নভেম্বর ২০২৩</p>
+                                        </div>
+                                        </div>
+
+                                </div>
+                                <div class="col-lg-2 col-md-2">
+                                    <div class="social-icon">
+                                <div class="" id="st-1">
+                                  <div class="st-total st-hidden">
+                                    <span class="st-label"></span>
+                                    <span class="st-shares">
+                                      Shares
+                                    </span>
+                                  </div>
+                                  <div class="st-btn st-last st-remove-label" data-network="sharethis" style="display: inline-block;">
+                                    <img alt="sharethis sharing button" src="https://platform-cdn.sharethis.com/img/sharethis.svg">
+                                    
+                                  </div></div>
+                               </div>
+                                </div>
+                            </div>
+                            
+    
+                               
+                        </div>
+
+                     <div class="row  mt-3">
+                        <div class="col-lg-12 col-md-10">
+                            <div class="post-image text-center">
+                                <img class="p-img my-3" src="https://www.apandesh.com/media/imgAll/2021September/road-blocked-2311150348.jpg" alt="">
+                                
+                            </div>
+
+                            
+                            
+                        </div>
+                     </div>  
+                     
+                     <div class="pdesc">
+                        <p>পঞ্চম দফায় বিএনপির ডাকা দুই দিনের অবরোধ কর্মসূচি আজ বুধবার (১৫ নভেম্বর) শুরু হয়েছে। এদিন ভোর ছয়টা থেকে আগামী শুক্রবার ভোর ছয়টা পর্যন্ত সারা দেশে সড়ক, রেল ও নৌপথে এই অবরোধ কর্মসূচি পালন করবে দলটি।</p>
+
+                        <p style="text-align:justify; font-size: 19px;">সরকারের পদত্যাগের এক দফা দাবি আদায়, নিহত নেতা-কর্মীদের হত্যার বিচার, আহত ব্যক্তিদের সুচিকিৎসাসহ আটক ও গ্রেফতার ব্যক্তিদের মুক্তির দাবিতে বিএনপি এ অবরোধ কর্মসূচি দিয়েছে। বিএনপির সঙ্গে আন্দোলনে থাকা একাধিক দল ও জোট এই অবরোধ কর্মসূচি পালন করছে। </p>
+
+                        <p style="text-align:justify; font-size: 19px;">এদিকে অবরোধে রাজধানীতে স্বল্প সংখ্যক যান চলাচল করতে দেখা গেছে। বেলা বাড়ার সঙ্গে সঙ্গে যান চলাচল বাড়ছিল। অফিসগামী ও জরুরি প্রয়োজনে বের হওয়া মানুষকে বিভিন্ন মোড়ে গণপরিবহনের জন্য অপেক্ষা করতে দেখা গেছে। </p>
+
+                        <p style="text-align:justify; font-size: 19px;">অপরদিকে রাজধানী থেকে কোনো দূরপাল্লার বাস ছাড়ছে না। কোনো জেলা থেকেও রাজধানীতে দূরপাল্লার বাস আসছে না।  </p>
+
+                        <p style="text-align:justify; font-size: 19px;">সকালে রাজধানীর ধানমন্ডিতে একটি প্রাইভেট কারে আগুন দিয়েছে দুর্বৃত্তরা। মঙ্গলবার (১৪ নভেম্বর) রাতে (রাত ১১টা পর্যন্ত) রাজধানীতে চারটি বাসে আগুন দেয়ার ঘটনা ঘটেছে। </p>
+
+                        <p style="text-align:justify; font-size: 19px;">মঙ্গলবার বিকালে এক ভার্চ্যুয়াল সংবাদ সম্মেলনে এই অবরোধ কর্মসূচি সফল করতে নেতা-কর্মীদের প্রতি আহ্বান জানিয়েছেন দলের জ্যেষ্ঠ যুগ্ম মহাসচিব রুহুল কবির রিজভী। </p>
+
+                        <p style="text-align:justify; font-size: 19px;">রুহুল কবির রিজভী সারা দেশে বিএনপি ও অঙ্গ সহযোগী নেতা-কর্মীদের নামে পুলিশ বাহিনীর মামলা ও গ্রেফতারের তথ্য তুলে ধরেন। </p>
+
+                        <p style="text-align:justify; font-size: 19px;">রুহুল কবির রিজভী সারা দেশে বিএনপি ও অঙ্গ সহযোগী নেতা-কর্মীদের নামে পুলিশ বাহিনীর মামলা ও গ্রেফতারের তথ্য তুলে ধরেন। </p>
+
+                        <p style="text-align:justify; font-size: 19px;">তার দেয়া তথ্য অনুযায়ী, গত ২৪ ঘণ্টায় (মঙ্গলবার বিকাল চারটার আগে) ৪২০ জনেরও বেশি নেতাকর্মীকে গ্রেফতার এবং ১১টি মামলায় এক হাজার ৩৫০ জনেরও বেশি নেতাকর্মীর নামে মামলা হয়েছে। </p>
+
+                        <p style="text-align:justify; font-size: 19px;">অবরোধেরে সমর্থনে আজ সকালে রাজধানীর শাহবাগে রুহুল কবির রিজভীর নেতৃত্বে বিক্ষোভ মিছিল করা হয়েছে। এক সময় বিএনপির নেতা-কর্মীরা সড়কে বসে পড়েন।</p>
+
+                        <p style="text-align:justify; font-size: 19px;">এদিকে এক বিবৃতিতে জামায়াতে ইসলামীর ভারপ্রাপ্ত সেক্রেটারি জেনারেল মাওলানা এটিএম মা’ছুম বলেন, সরকারের পদত্যাগ, নির্বাচনকালীন কেয়ারটেকার সরকার গঠন, আমির ডা. শফিকুর রহমানসহ সব রাজবন্দি এবং ওলামা-মাশায়েখের মুক্তি, মিথ্যা মামলা প্রত্যাহার এবং দ্রব্যমূল্য মানুষের ক্রয়ক্ষমতার মধ্যে নিয়ে আসার দাবিতে আমি জামায়াতে ইসলামীর পক্ষ থেকে আগামী ১৫ নভেম্বর ভোর ৬টা থেকে শুরু হয়ে ১৭ নভেম্বর ভোর ৬টা পর্যন্ত সারাদেশে টানা ৪৮ ঘণ্টা শান্তিপূর্ণ সড়ক, রেল ও নৌপথ অবরোধের নতুন কর্মসূচি ঘোষণা করছি।</p>
+
+                        <p style="text-align:justify; font-size: 19px;"> গত ২৮ অক্টোবর মহাসমাবেশে হামলা, হত্যা, নেতাকর্মীদের গ্রেফতারের প্রতিবাদ এবং সরকারের পদত্যাগের এক দফা দাবিতে ২৯ অক্টোবর হরতাল এবং ৩১ অক্টোবর, ১ ও ২ নভেম্বর মোট তিন দিনের অবরোধ কর্মসূচি পালন করে বিএনপি-জামায়াত ও তাদের শরিকরা। তারপর ৫ ও ৬ নভেম্বর দ্বিতীয় দফায় এবং ৮ ও ৯ নভেম্বর তৃতীয় দফায় অবরোধ কর্মসূচি পালন করে তারা। ১১ ও ১২ নভেম্বর চতুর্থ দফায় ৪৮ ঘণ্টার অবরোধ পালন করা হয়। এরপর মঙ্গলবার একদিনের বিরতি দিয়ে বুধবার সকাল ৬টা থেকে পঞ্চম দফায় ৪৮ ঘণ্টার অবরোধ ডাকা হয়।</p>
+
+                        <p style="text-align:justify; font-size: 19px;">কর্মসূচির শুরু দিকেই বিএনপির মহাসচিব মির্জা ফখরুল ইসলাম আলমগীর, স্থায়ী কমিটির সদস্য মির্জা আব্বাস, আমীর খসরু মাহমুদ চৌধুরীসহ দলের সিনিয়র নেতাদের গ্রেফতার করে আইনশৃঙ্খলা বাহিনী। আর গ্রেফতারের বাইরে থাকা নেতারা আত্মগোপনে রয়েছেন।</p>
+
+                        <p style="text-align:justify; font-size: 19px;">আপন দেশ/আরএ</p>
+
+                       
+                    </div>
+                      <p class="montobbo">মন্তব্য করুন ।।
+                        খবরের বিষয়বস্তুর সঙ্গে মিল আছে এবং আপত্তিজনক নয়- এমন মন্তব্যই প্রদর্শিত হবে। মন্তব্যগুলো পাঠকের নিজস্ব মতামত,আপন দেশ ডটকম- এর দায়ভার নেবে না।</p> 
+
+
+                        <div class="relatedTags">
+                            <p class="Subject">সম্পর্কিত বিষয়: </p>
+                            <ul class="list-inline">
+                            <li class="list-inline-item"><a href="https://www.apandesh.com/tags/capital"><i class="fa fa-tags" aria-hidden="true"></i> রাজধানী</a> </li>
+                            <li class="list-inline-item"><a href="https://www.apandesh.com/tags/capital"><i class="fa fa-tags" aria-hidden="true"></i> রাজধানী</a> </li>
+                            <li class="list-inline-item"><a href="https://www.apandesh.com/tags/bnp"><i class="fa fa-tags" aria-hidden="true"></i> বিএনপি</a> </li>
+                            <li class="list-inline-item"><a href="https://www.apandesh.com/tags/jamaat-e-islami"><i class="fa fa-tags" aria-hidden="true"></i> জামায়াত</a> </li>
+                            <li class="list-inline-item"><a href="https://www.apandesh.com/tags/apandesh"><i class="fa fa-tags" aria-hidden="true"></i> আপন দেশ</a> </li>
+                            <li class="list-inline-item"><a href="https://www.apandesh.com/tags/blockade"><i class="fa fa-tags" aria-hidden="true"></i> অবরোধ</a> </li>
+                            </ul>
+                            </div>
+  <!-- ================================share korun -->
+
+                            <div class="share mt-5">
+                                <h5><b>শেয়ার করুনঃ </b>
+                                </h5>
+                                <div class="sharethis-inline-share-buttons st-center  st-inline-share-buttons st-animated" id="st-2"><div class="st-total st-hidden">
+                                  <span class="st-label"></span>
+                                  <span class="st-shares">
+                                    Shares
+                                  </span>
+                                </div><div class="st-btn st-first st-remove-label" data-network="facebook" style="display: inline-block;">
+                                  <img style="vertical-align: top;" alt="facebook sharing button" src="https://platform-cdn.sharethis.com/img/facebook.svg">
+                                  
+                                </div><div class="st-btn st-remove-label" data-network="twitter" style="display: inline-block;">
+                                  <img style="vertical-align: top;" alt="twitter sharing button" src="https://platform-cdn.sharethis.com/img/twitter.svg">
+                                  
+                                </div><div class="st-btn st-remove-label" data-network="email" style="display: inline-block;">
+                                  <img style="vertical-align: top;" alt="email sharing button" src="https://platform-cdn.sharethis.com/img/email.svg">
+                                  
+                                </div><div class="st-btn st-remove-label" data-network="messenger" style="display: inline-block;">
+                                  <img style="vertical-align: top;" alt="messenger sharing button" src="https://platform-cdn.sharethis.com/img/messenger.svg">
+                                  
+                                </div><div class="st-btn st-remove-label" data-network="linkedin" style="display: inline-block;">
+                                  <img style="vertical-align: top;" alt="linkedin sharing button" src="https://platform-cdn.sharethis.com/img/linkedin.svg">
+                                  
+                                </div><div class="st-btn st-remove-label" data-network="whatsapp" style="display: none;">
+                                  <img style="vertical-align: top;" alt="whatsapp sharing button" src="https://platform-cdn.sharethis.com/img/whatsapp.svg">
+                                  
+                                </div><div class="st-btn st-last st-remove-label" data-network="sharethis" style="display: inline-block;">
+                                  <img style="vertical-align: top;" alt="sharethis sharing button" src="https://platform-cdn.sharethis.com/img/sharethis.svg">
+                                  
+                                </div></div>
+                                </div>
+
+
+                                <div class="container mt-5">
+                                    <div class="row">
+                                      <div class="col-lg-3">
+                                        <div class="bishes-news-btn">
+                                          <a>  আরো পড়ুন   </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-9"></div>
+                                    </div>
+                                  </div>
+
+
+                                  <div class="row mt-3 ">
+                                    <div class="col-lg-4 mb-3">
+                                      <div class="left-wrapper">
+                                        
+                                        <div class="left-img">
+                                          <img src="https://i.postimg.cc/MKFwmXbj/apon.jpg" alt="">
+                                        </div>
+                                        <div class="left-content p-2">
+                                          <h3>মিরপুরে পোশাক শ্রমিকদের সড়ক অবরোধ</h3>
+                            
+                                        </div>
+                                     
+                      
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-4 mb-3" >
+                                      <div class="left-wrapper">
+                                        
+                                        <div class="left-img">
+                                          <img src="https://www.apandesh.com/media/imgAll/2021September/SM/Fire-2311131243-SM.jpg" alt="">
+                                        </div>
+                                        <div class="left-content p-2">
+                                          <h3>মিরপুরে পোশাক শ্রমিকদের সড়ক অবরোধ</h3>
+                            
+                                        </div>
+                                     
+                      
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                      <div class="left-wrapper">
+                                        
+                                        <div class="left-img">
+                                          <img src="https://www.apandesh.com/media/imgAll/2021September/SM/3-party-2311131251-SM.jpg" alt="">
+                                        </div>
+                                        <div class="left-content p-2">
+                                          <h3>মিরপুরে পোশাক শ্রমিকদের সড়ক অবরোধ</h3>
+                            
+                                        </div>
+                                     
+                      
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                      <div class="left-wrapper">
+                                        
+                                        <div class="left-img">
+                                          <img src="https://i.postimg.cc/MKFwmXbj/apon.jpg" alt="">
+                                        </div>
+                                        <div class="left-content p-2">
+                                          <h3>মিরপুরে পোশাক শ্রমিকদের সড়ক অবরোধ</h3>
+                            
+                                        </div>
+                                     
+                      
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                      <div class="left-wrapper">
+                                        
+                                        <div class="left-img">
+                                          <img src="https://www.apandesh.com/media/imgAll/2021September/SM/3-party-2311131251-SM.jpg" alt="">
+                                        </div>
+                                        <div class="left-content p-2">
+                                          <h3>মিরপুরে পোশাক শ্রমিকদের সড়ক অবরোধ</h3>
+                            
+                                        </div>
+                                     
+                      
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                      <div class="left-wrapper">
+                                        
+                                        <div class="left-img">
+                                          <img src="https://www.apandesh.com/media/imgAll/2021September/SM/pm-2311140539-SM.jpg" alt="">
+                                        </div>
+                                        <div class="left-content p-2">
+                                          <h3>মিরপুরে পোশাক শ্রমিকদের সড়ক অবরোধ</h3>
+                            
+                                        </div>
+                                     
+                      
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                      <div class="left-wrapper">
+                                        
+                                        <div class="left-img">
+                                          <img src="https://www.apandesh.com/media/imgAll/2021September/SM/Donald-Lu-2311131326-SM.jpg" alt="">
+                                        </div>
+                                        <div class="left-content p-2">
+                                          <h3>মিরপুরে পোশাক শ্রমিকদের সড়ক অবরোধ</h3>
+                            
+                                        </div>
+                                     
+                      
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                      <div class="left-wrapper">
+                                        
+                                        <div class="left-img">
+                                          <img src="https://www.apandesh.com/media/imgAll/2021September/SM/tcb-2311140345-SM.jpg" alt="">
+                                        </div>
+                                        <div class="left-content p-2">
+                                          <h3>মিরপুরে পোশাক শ্রমিকদের সড়ক অবরোধ</h3>
+                            
+                                        </div>
+                                     
+                      
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                      <div class="left-wrapper">
+                                        
+                                        <div class="left-img">
+                                          <img src="https://www.apandesh.com/media/imgAll/2021September/SM/milar-2311140348-SM.jpg" alt="">
+                                        </div>
+                                        <div class="left-content p-2">
+                                          <h3>মিরপুরে পোশাক শ্রমিকদের সড়ক অবরোধ</h3>
+                            
+                                        </div>
+                                     
+                      
+                                    </div>
+                                    </div>
+                                   
+                                 
+                                   
+                                  
+                                 
+                                   
+                                   </div>
+              
+
+
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <div class="last-wrapper">
+                        <img class="w-100 ddlogo" src="https://i.postimg.cc/Qttzxb5H/llogo.png" alt="">
+              
+                        <div class="last-content pt-3">
+                          
+                          <div class="heading w-100 p-0 py-2">
+                            <h3>সর্বশেষ</h3>
+                          </div>
+                          
+                        </div>
+                        <div class="list-content">
+                         <div class="midle-container-wrapper p-0">
+                    <div class="image-content">
+                      <img class="w-100" src="https://i.postimg.cc/g0yPww8F/img33.jpg" alt="">
+                    </div>
+                    <div class="para-content">
+                      <h3>মেয়াদের শেষ একনেক সভায় ৪৪ প্রকল্প অনুমোদন</h3>
+                    </div>
+                  </div>
+      
+                  <div class="midle-container-wrapper">
+                    <div class="image-content">
+                      <img class="w-100" src="https://i.postimg.cc/g0yPww8F/img33.jpg" alt="">
+                    </div>
+                    <div class="para-content">
+                      <h3>মেয়াদের শেষ একনেক সভায় ৪৪ প্রকল্প অনুমোদন</h3>
+                    </div>
+                  </div>
+      
+                  <div class="midle-container-wrapper">
+                    <div class="image-content">
+                      <img class="w-100" src="https://i.postimg.cc/g0yPww8F/img33.jpg" alt="">
+                    </div>
+                    <div class="para-content">
+                      <h3>মেয়াদের শেষ একনেক সভায় ৪৪ প্রকল্প অনুমোদন</h3>
+                    </div>
+                  </div>
+      
+                  <div class="midle-container-wrapper border-0">
+                    <div class="image-content">
+                      <img class="w-100" src="https://i.postimg.cc/g0yPww8F/img33.jpg" alt="">
+                    </div>
+                    <div class="para-content">
+                      <h3>মেয়াদের শেষ একনেক সভায় ৪৪ প্রকল্প অনুমোদন</h3>
+                      
+                    </div>
+                  </div>
+                          
+                        </div>
+                        <div class="all-news-btn">
+                          <a>সব খবর <i class="fas fa-arrow-right "></i></a>
+                        </div>
+                        <div class="next-img w-100 mt-3">
+                          <img class="w-100" src="https://i.postimg.cc/kGSvjqjC/vv.jpg" alt="">
+                        </div>
+
+                        <div class="last-content pt-3">
+                          
+                            <div class="heading w-100 p-0 py-2">
+                              <h3>সর্বশেষ</h3>
+                            </div>
+                            
+                          </div>
+                          <div class="list-content">
+                           <div class="midle-container-wrapper p-0">
+                      <div class="image-content">
+                        <img class="w-100" src="https://i.postimg.cc/g0yPww8F/img33.jpg" alt="">
+                      </div>
+                      <div class="para-content">
+                        <h3>মেয়াদের শেষ একনেক সভায় ৪৪ প্রকল্প অনুমোদন</h3>
+                      </div>
+                    </div>
+        
+                    <div class="midle-container-wrapper">
+                      <div class="image-content">
+                        <img class="w-100" src="https://i.postimg.cc/g0yPww8F/img33.jpg" alt="">
+                      </div>
+                      <div class="para-content">
+                        <h3>মেয়াদের শেষ একনেক সভায় ৪৪ প্রকল্প অনুমোদন</h3>
+                      </div>
+                    </div>
+        
+                    <div class="midle-container-wrapper">
+                      <div class="image-content">
+                        <img class="w-100" src="https://i.postimg.cc/g0yPww8F/img33.jpg" alt="">
+                      </div>
+                      <div class="para-content">
+                        <h3>মেয়াদের শেষ একনেক সভায় ৪৪ প্রকল্প অনুমোদন</h3>
+                      </div>
+                    </div>
+        
+                    <div class="midle-container-wrapper border-0">
+                      <div class="image-content">
+                        <img class="w-100" src="https://i.postimg.cc/g0yPww8F/img33.jpg" alt="">
+                      </div>
+                      <div class="para-content">
+                        <h3>মেয়াদের শেষ একনেক সভায় ৪৪ প্রকল্প অনুমোদন</h3>
+                        
+                      </div>
+                    </div>
+                            
+                          </div>
+                          <div class="all-news-btn">
+                            <a>সব খবর <i class="fas fa-arrow-right "></i></a>
+                          </div>
+              
+                       
+              
+                        
+              
+      
+                       
+              
+                       </div>>
+                </div>
+            </div>
+            
+          </div>
+      </div>
+
+     
+
+
+
+
+     <!--========================== footer-area =================================-->
+
+ <div class="footer-area">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+         <div class="custom-border">
+          <div class="logo ">
+            <img src="https://i.postimg.cc/Qttzxb5H/llogo.png" alt="">
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="mid-content">
+            <ul>
+              <li> <b>প্রধান সম্পাদক:</b> আফজাল বারী</li>
+              <li>প্রোমিতা আফরিন কর্তৃক সম্পাদিত ও প্রকাশিত</li>
+              <li> <b>অফিস:</b> সি-৫০১, ৬ষ্ঠতলা, আল রাজী কমপ্লেক্স</li>
+              <li>শহীদ সৈয়দ নজরুল ইসলাম সরণি, পুরানা পল্টন</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="last-content">
+            <ul>
+              <li> <b>যোগাযোগ:</b>  ০২-৫৫১১১৬৬০, +৮৮০১৬০০৩৪৪৩৭০-৭১,</li>
+              <li>নিউজ রুম: +৮৮০১৬০০৩৪৪৩৭২,</li>
+              <li> বিজ্ঞাপন: +৮৮০১৬০০৩৪৪৩৭৩</li>
+              <li>E-mail: apandeshnews@gmail.com</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <div class="footer-bottom bg-dark ">
+    <div class="container">
+      <div class="row text-center align-items-center">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="copyright">
+            <p class="text-light py-3">© ২০২৩ | আপন দেশ ডটকম কর্তৃক সর্বসত্ব ® সংরক্ষিত | উন্নয়নে ইমিথমেকারস.কম</p>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   
+    <marquee class="pt-3" behavior="" direction="scroll" >
+      <ul class="marqu">
+        <li class="text-dark"> <img src="https://i.postimg.cc/FsNBx5P0/apon-icon.jpg" alt=""> পেট্রোল পাম্পে জেনারেটরের তেল নিতে ওসির ছাড়পত্র লাগবে: ডিএমপি</li>
+        <li class="text-dark" > <img src="https://i.postimg.cc/FsNBx5P0/apon-icon.jpg" alt="">  মার্শের ব্যাটে ৮ উইকেটে হেরে টুর্নামেন্ট শেষ করলো বাংলাদেশ</li>
+        <li class="text-dark"> <img src="https://i.postimg.cc/FsNBx5P0/apon-icon.jpg" alt="">   ভারতে পাচারের সময় মেহেরপুর সীমান্তে ৩৩,২০০ ডলার উদ্ধার</li>
+        <li class="text-dark"> <img src="https://i.postimg.cc/FsNBx5P0/apon-icon.jpg" alt="">  চীনা রাষ্ট্রদূতের বক্তব্য জনগণের আকাঙ্ক্ষার প্রতিফলন নয়: বিএনপি</li>
+      </ul>
+     
+    </marquee>
+
+
+     <!--========================== footer-area-end============================-->
+    
+
+
+     <script>
+        // scroll header======================
+
+  const header = document.getElementById('site-header');
+  let lastScroll = 0;
+
+window.addEventListener('scroll', () => {
+
+  
+
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll > lastScroll) {
+    // Scrolling down, hide the header
+    header.style.top = '-50px';
+    header.style.display = "block"
+  } else if(currentScroll == 0){
+    header.style.display = "none"
+
+  }
+  
+  else {
+    // Scrolling up, show the header
+    header.style.top = '-80px';
+    header.style.display = "block"
+  }
+
+  lastScroll = currentScroll;
+});
+     </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
